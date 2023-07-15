@@ -1,0 +1,311 @@
+body h1,h2,h3,h4,h5,h6,span,p,strong,a,button{
+    font-family: 'League Spartan', sans-serif;
+}
+header{
+    background-color: #e7e6e6;
+    z-index: 999;
+}
+header .logo{}
+header .logo img{
+    width: 6rem;
+}
+nav{}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+} 
+nav ul li {
+    margin-left: 5px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.88rem;
+    padding: 15px 15px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+nav ul li a:hover{
+    color: #000;
+}
+nav ul li a::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #9d8eee;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    transform: .5s;
+} 
+nav ul li:first-child a{
+    color: #1e00c7;
+} 
+nav ul li:first-child a::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #9d8cc9;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+} 
+nav ul li a:hover::before{
+    width: 100%;
+}
+nav ul li ul li{}
+nav ul li ul li a{}
+.nav-button{}
+.nav-button a{
+    display: inline-block;
+    text-decoration: none;
+    color: #3260eb;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    transform: .4s;
+} 
+.nav-button a::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background: #9d8eec;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transform: .5s;
+    z-index: -1;
+    border-radius: 30px;
+    transition: .4s;
+
+
+}
+.nav-button a:hover::before{
+    width: 100%;
+
+}
+.nav-button a:hover{
+    color: #fff;
+} 
+
+.banner{
+    background:#edf6ff;
+    
+}
+
+.text-bannnr {
+    margin-left: 11%;
+    margin-top: 110px;
+}
+.text-bannnr p {
+    color: #6c7172;
+    width: 550px;
+}
+.text-bannnr h1 {
+    width: 80%;
+    margin-bottom: 45px;
+    font-weight: 500;
+}
+.text-bannnr .banner-link{}
+.text-bannnr .banner-link a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #0d6efd;
+    background: #0d6efd;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 35px;
+    transition: .5s;
+    border-radius: 35px;
+}
+.text-bannnr .banner-link a:hover{
+    background: #fff;
+    color: #0d6efd;
+}
+
+.banner-pic{
+    overflow: hidden;
+    /* z-index: 1; */
+}
+.banner-pic img {
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 115px;
+    height: 86vh;
+    margin-bottom: -103px;
+    /* z-index: -1; */
+}
+
+
+
+.footer-content .pra{
+    color: #a9a9f2;
+}
+.footer-content h1 {
+    width: 50%;
+    font-weight: 400;
+    position: relative;
+}
+.footer-content h1::after {
+    content: '';
+    width: 8%;
+    height: 3%;
+    background: #2b189b;
+    position: absolute;
+    bottom: -12px;
+    left: 2px;
+}
+.footer-content p {
+    width: 44%;
+    color: #898179;
+    margin-top: 45px;
+    /* margin-bottom: 9px; */
+}
+
+.service-pic::after {
+    content: '';
+    background-image: url(https://i.ibb.co/cDLwj4j/service-patern.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding: 100px;
+    position: absolute;
+    bottom: -650px;
+    left: 58px;
+}
+.card{
+    margin-top: 70px;
+    background: #f9fcff;
+    transition: .8s;
+   position: relative;
+}
+
+
+
+.card:hover{
+    background: #3b4bf4;
+    color: #fff;
+    box-shadow: 10px 10px 100px 50px;
+}
+
+
+   
+
+
+.card h3{
+    font-weight: 400;
+}
+.card span {
+    color: #fff;
+    background: #5252f0;
+    height: 76px;
+    width: 76px;
+    display: inline-block;
+    line-height: 76px;
+    text-align: center;
+    font-size: 33px;
+    border-radius: 54% 54% 56% 0%;
+    margin: 25px 0px;
+    transition: .4s;
+    position: relative;
+
+}
+
+
+.card span::after {
+    content: '';
+    width: 50%;
+    height: 4%;
+    background: #9d8fec;
+    position: absolute;
+    bottom: -12px;
+    left: 2px;
+    transition: .4s;
+}
+.card:hover span::after{
+    background: #fff;
+    color: #5252f0;
+    width: 70%;
+    
+} 
+.card:hover span{
+    background: #fff;
+    color: #5252f0;
+}
+
+.card .pragarp {
+    width: 95%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.control{
+    background: url(./img/video-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0;
+    margin-top: 100px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.control::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#8f85ca;
+    display: inline-block;
+    z-index: -1;
+    opacity: .9;
+}
+.control span {
+height: 80px !important;
+width: 80px;
+background: #fff;
+display: inline-block;
+border-radius: 50%;
+color:#9384e9;
+font-size: 80px;
+line-height: 100px;
+padding-left: 4px 0;
+margin-top: 5px;
+position: relative;
+}
+.control span::before{
+    content: "";
+    width: 80px;
+    height:80px;
+    border: 10px double #ffffff ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: playbtn 5s ease-out infinite;
+
+}
+@keyframes playbtn{
+0%,30%{
+    transform: scale(0);
+    opacity: 1;
+
+}
+50%{
+    transform: scale(1.5);
+    opacity: 7;
+}
+100%{
+    transform: scale(2);
+    opacity: 0;
+}
+}
